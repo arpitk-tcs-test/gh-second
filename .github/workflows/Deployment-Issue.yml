@@ -1,6 +1,6 @@
-name: Issue GH
+name: handle issues
 on: issues
-Jobs:
+jobs:
   output-info:
     runs-on: Ubuntu-latest
     steps:
