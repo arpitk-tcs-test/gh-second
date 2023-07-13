@@ -30,9 +30,3 @@ jobs:
         run: npm run build
       - name: Deploy
         run: echo "Deploy"
-  Issue:
-    needs: deploy
-    runs-on: Ubuntu-latest
-    steps:
-      - name: Get Issue Details
-        uses: echo "${{ toJSON(github.event)}}"
